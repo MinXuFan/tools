@@ -8,4 +8,5 @@ docker run -itd -p 80:80  --env USER_PASSWD="Test1024" -v $PWD:/home/paddle regi
 python3 -m pip install paddlepaddle -i https://mirror.baidu.com/pypi/simple 
 pip install "paddleocr>=2.0.1" 
 pip install opencv-python-headless
+paddleocr --image_dir /home/paddle  --use_angle_cls true --lang en --use_gpu false
 ```
